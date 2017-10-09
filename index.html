@@ -5,9 +5,31 @@
     <meta charset="utf-8">
     <style>
         .breathCircle{
+            background: blue;
+            display: block;
+            border-radius: 50%;
+            animation-timing-function: linear;
+            animation-name: example;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .breathBackgroundCircle{
+            background: grey;
             border-radius: 50%;
             width: 300px;
             height: 300px;
+            border-width: 10px;
+            border-color: black;
+        }
+
+        @keyframes example {
+            0%   {width: 100px; height: 100px}
+            25%  {width: 300px; height: 300px}
+            50%  {width: 300px; height: 300px}
+            75%  {width: 100px; height: 100px}
+            100% {width: 100px; height: 100px}
         }
     </style>
   </head>
@@ -17,7 +39,7 @@
     <h2>Breath out for 3 secs</h2>
     <h2>Hold breath for 3 secs</h2>
     <img src="pics/BoxBreathing.gif">
-    <div class="breatCircle"></div>
-    <div class="breatBackgroundCircle"></div>
+    <div class="breathCircle"></div>
+    <div class="breathBackgroundCircle"></div>
   </body>
 </html>
