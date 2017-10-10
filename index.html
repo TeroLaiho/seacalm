@@ -4,43 +4,60 @@
     <title>SeaCalm</title>
     <meta charset="utf-8">
     <style>
-        .breathCircle{
-            background: blue;
-            display: block;
-            border-radius: 50%;
-            animation-timing-function: linear;
-            animation-name: example;
-            animation-duration: 15s;
-            animation-iteration-count: infinite;
+    .box{
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 8%;
+      width: 75vw;
+      height: 75vh;
+      background: none;
+      border: 3px solid black;
+    }
+    .breathCircle{
+        position: absolute;
+        background: navy;
+        display: block;
+        border-radius: 50%;
+        animation-timing-function: linear;
+        animation-name: example;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+    .breathBackgroundCircle{
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        background: white;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        border: 5px solid black;
+    }
+    @keyframes example {
+    0%   {width: 100px; height: 100px}
+    25%  {width: 290px; height: 290px}
+    50%  {width: 290px; height: 290px}
+    75%  {width: 100px; height: 100px}
+    100% {width: 100px; height: 100px}
+    }
+</style>
+</head>
 
-        }
-
-        .breathBackgroundCircle{
-            background: grey;
-            border-radius: 50%;
-            width: 300px;
-            height: 300px;
-            border-width: 10px;
-            border-color: black;
-        }
-
-        @keyframes example {
-            0%   {width: 100px; height: 100px}
-            25%  {width: 300px; height: 300px}
-            50%  {width: 300px; height: 300px}
-            75%  {width: 100px; height: 100px}
-            100% {width: 100px; height: 100px}
-        }
-    </style>
-  </head>
   <body>
+    <div class="box">
     <h1>To achive calm readiness</h1>
     <h2>Breath in for 3 secs</h2>
     <h2>Hold breath for 3 secs</h2>
     <h2>Breath out for 3 secs</h2>
     <h2>Hold breath for 3 secs</h2>
-    <img src="pics/BoxBreathing.gif">
-    <div class="breathCircle"></div>
-    <div class="breathBackgroundCircle"></div>
-  </body>
+
+<!-- Example gif to get the timing right -->
+<!-- <img src="pics/BoxBreathing.gif"> -->
+
+    <div class="breathBackgroundCircle">
+        <div class="breathCircle"></div>
+    </div>
+</div>
+</body>
 </html>
