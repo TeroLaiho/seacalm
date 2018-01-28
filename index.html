@@ -22,8 +22,8 @@
     }
     .breathCircle{
         position: absolute;
-        top:5%;
-        left:5%;
+        top:30%;
+        left:25%;
         background: navy;
         display: block;
         border-radius: 50%;
@@ -34,24 +34,26 @@
     }
     .breathBackgroundCircle{
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 25%;
         background: white;
         border-radius: 50%;
-        width: 20vw;
-        height: 20vw;
+        width: 40vh;
+        height: 40vh;
         border: 5px solid black;
     }
     .breathHeader
     {
         position: absolute;
         top:0%;
+        left:5%;
         font-size: 5vh;
     }
     .breathSentence
     {
         position: absolute;
-        top: 25%;
+        top: 15%;
+        left: 5%;
         font-size: 3vh;
         animation-duration: 16s;
         animation-iteration-count: infinite;
@@ -69,9 +71,23 @@
         animation-name: sentence4Animation;
     }
 
-    @media only screen and (orientation: landscape) {
+    @media only screen and (orientation: portrait) {
     body {
         background-color: lightblue;
+    }
+    .breathBackgroundCircle
+    {
+        background-color: purple;
+        width: 40vw;
+        height: 40vw;
+    }
+    .breathHeader
+    {
+        font-size: 5vw;
+    }
+    .breathSentence
+    {
+        font-size: 3vw;
     }
     }
 
@@ -126,9 +142,9 @@
 <!-- Example gif to get the timing right -->
 <!-- <img src="pics/BoxBreathing.gif"> -->
 
-    <div class="breathBackgroundCircle">
-        <div class="breathCircle"></div>
-    </div>
+    <div class="breathBackgroundCircle"></div>
+    <div class="breathCircle"></div>
+
 </div>
 </body>
 </html>
