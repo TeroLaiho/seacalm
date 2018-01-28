@@ -4,6 +4,9 @@
     <title>SeaCalm</title>
     <meta charset="utf-8">
     <style>
+    body {
+        background-color: #77ACA2;
+    }
     h1 {
         font-size: 10vh;
     }
@@ -18,13 +21,13 @@
       width: 75vw;
       height: 75vh;
       background: none;
-      border: 3px solid black;
+      border: 3px solid #468189;
     }
     .breathCircle{
         position: absolute;
         top:30%;
         left:25%;
-        background: navy;
+        background: #395E66;
         display: block;
         border-radius: 50%;
         animation-timing-function: linear;
@@ -32,7 +35,7 @@
         animation-duration: 16s;
         animation-iteration-count: infinite;
     }
-    .breathBackgroundCircle{
+    /* .breathBackgroundCircle{
         position: absolute;
         top: 30%;
         left: 25%;
@@ -41,7 +44,7 @@
         width: 40vh;
         height: 40vh;
         border: 5px solid black;
-    }
+    } */
     .breathHeader
     {
         position: absolute;
@@ -72,22 +75,25 @@
     }
 
     @media only screen and (orientation: portrait) {
-    body {
+    /* body {
         background-color: lightblue;
-    }
-    .breathBackgroundCircle
+    }  */
+    /* .breathBackgroundCircle
     {
         background-color: purple;
         width: 40vw;
         height: 40vw;
-    }
+    }  */
     .breathHeader
     {
         font-size: 5vw;
+        font: #468189
     }
     .breathSentence
     {
         font-size: 3vw;
+        font: #468189;
+
     }
     }
 
@@ -130,7 +136,6 @@
 
 </style>
 </head>
-
   <body>
     <div class="box">
     <h1 class="breathHeader">To achive calm readiness</h1>
@@ -142,7 +147,7 @@
 <!-- Example gif to get the timing right -->
 <!-- <img src="pics/BoxBreathing.gif"> -->
 
-    <div class="breathBackgroundCircle"></div>
+<!-- <div class="breathBackgroundCircle"></div> -->
     <div class="breathCircle"></div>
 
 </div>
