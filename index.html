@@ -26,13 +26,13 @@
         display: block;
         border-radius: 50%;
         animation-timing-function: linear;
-        animation-name: breath;
+        animation-name: breathAnimation;
         animation-duration: 16s;
         animation-iteration-count: infinite;
     }
     .breathBackgroundCircle{
         position: absolute;
-        top: 25%;
+        top: 40%;
         left: 40%;
         background: white;
         border-radius: 50%;
@@ -40,23 +40,81 @@
         height: 20vw;
         border: 5px solid black;
     }
-    @keyframes breath {
-    0%   {width: 10vw; height: 10vw}
-    25%  {width: 19vw; height: 19vw}
-    50%  {width: 19vw; height: 19vw}
-    75%  {width: 10vw; height: 10vw}
-    100% {width: 10vw; height: 10vw}
+    .breathHeader
+    {
+        position: absolute;
+        top:0%;
+        font-size: 5vh;
     }
+    .breathSentence
+    {
+        position: absolute;
+        top: 25%;
+        font-size: 3vh;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+    }
+    .sentence1{
+        animation-name: sentence1Animation;
+    }
+    .sentence2{
+        animation-name: sentence2Animation;
+    }
+    .sentence3{
+        animation-name: sentence3Animation;
+    }
+    .sentence4{
+        animation-name: sentence4Animation;
+    }
+
+
+    @keyframes breathAnimation {
+    0%   {width: 10vw; height: 10vw;}
+    25%  {width: 19vw; height: 19vw;}
+    50%  {width: 19vw; height: 19vw;}
+    75%  {width: 10vw; height: 10vw;}
+    100% {width: 10vw; height: 10vw;}
+    }
+
+    @keyframes sentence1Animation {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    26%  {opacity: 0;}
+    100% {opacity: 0;}
+    }
+
+    @keyframes sentence2Animation {
+    0%   {opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 1;}
+    51%  {opacity: 0;}
+    100% {opacity: 0;}
+    }
+
+    @keyframes sentence3Animation {
+    0%   {opacity: 0;}
+    50%  {opacity: 0;}
+    75%  {opacity: 1;}
+    76%  {opacity: 0;}
+    100% {opacity: 0;}
+    }
+
+    @keyframes sentence4Animation {
+    0%   {opacity: 0;}
+    75%  {opacity: 0;}
+    100% {opacity: 1;}
+    }
+
 </style>
 </head>
 
   <body>
     <div class="box">
-    <h1>To achive calm readiness</h1>
-    <h2>Breath in for 4 secs</h2>
-    <h2>Hold breath for 4 secs</h2>
-    <h2>Breath out for 4 secs</h2>
-    <h2>Hold breath for 4 secs</h2>
+    <h1 class="breathHeader">To achive calm readiness</h1>
+    <h2 class="breathSentence sentence1">Breath in for 4 secs</h2>
+    <h2 class="breathSentence sentence2">Hold breath for 4 secs</h2>
+    <h2 class="breathSentence sentence3">Breath out for 4 secs</h2>
+    <h2 class="breathSentence sentence4">Hold breath for 4 secs</h2>
 
 <!-- Example gif to get the timing right -->
 <!-- <img src="pics/BoxBreathing.gif"> -->
