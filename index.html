@@ -22,6 +22,8 @@
     }
     .breathCircle{
         position: absolute;
+        top:5%;
+        left:5%;
         background: navy;
         display: block;
         border-radius: 50%;
@@ -33,7 +35,7 @@
     .breathBackgroundCircle{
         position: absolute;
         top: 40%;
-        left: 40%;
+        left: 25%;
         background: white;
         border-radius: 50%;
         width: 20vw;
@@ -67,6 +69,11 @@
         animation-name: sentence4Animation;
     }
 
+    @media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+    }
 
     @keyframes breathAnimation {
     0%   {width: 10vw; height: 10vw;}
