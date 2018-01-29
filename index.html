@@ -25,26 +25,28 @@
     }
     .breathCircle{
         position: absolute;
-        top:30%;
-        left:25%;
+        top:45%;
+        left:20%;
         background: #395E66;
         display: block;
         border-radius: 50%;
+        width: 20vh;
+        height: 20vh;
         animation-timing-function: linear;
         animation-name: breathAnimation;
         animation-duration: 16s;
         animation-iteration-count: infinite;
     }
-    /* .breathBackgroundCircle{
+    /*.breathBackgroundCircle{
         position: absolute;
-        top: 30%;
-        left: 25%;
+        top: 29%;
+        left: 12%;
         background: white;
         border-radius: 50%;
-        width: 40vh;
-        height: 40vh;
+        width: 42vh;
+        height: 42vh;
         border: 5px solid black;
-    } */
+    }*/
     .breathHeader
     {
         position: absolute;
@@ -90,14 +92,32 @@
     {
         font-size: 3vw;
     }
+    .breathCircle
+    {
+        width: 20vw;
+        height: 20vw;
+    }
+    /*.breathBackgroundCircle
+    {
+        width: 42vw;
+        height: 42vw;
+    }*/
     }
 
-    @keyframes breathAnimation {
+    /*@keyframes breathAnimation {
     0%   {width: 10vw; height: 10vw;}
     25%  {width: 19vw; height: 19vw;}
     50%  {width: 19vw; height: 19vw;}
     75%  {width: 10vw; height: 10vw;}
     100% {width: 10vw; height: 10vw;}
+    }*/
+
+    @keyframes breathAnimation {
+    0%   {transform: scale(1,1);}
+    25%  {transform: scale(2,2);}
+    50%  {transform: scale(2,2);}
+    75%  {transform: scale(1,1);}
+    100% {transform: scale(1,1);}
     }
 
     @keyframes sentence1Animation {
@@ -138,7 +158,7 @@
     <h2 class="breathSentence sentence2">Hold breath for 4 secs</h2>
     <h2 class="breathSentence sentence3">Breath out for 4 secs</h2>
     <h2 class="breathSentence sentence4">Hold breath for 4 secs</h2>
-<!-- <div class="breathBackgroundCircle"></div> -->
+    <!--<div class="breathBackgroundCircle"></div>-->
     <div class="breathCircle"></div>
 
 </div>
